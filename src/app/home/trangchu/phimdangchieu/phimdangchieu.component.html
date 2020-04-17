@@ -1,0 +1,14 @@
+<div class="movie container-fluid">
+    <h1>Phim dang chieu</h1>
+    <owl-carousel-o [options]="customOptions">
+        <ng-container *ngFor="let item of ArrDsPhim">
+            <ng-template class="test" carouselSlide [id]="item.id">
+                <div class="olw-car">
+                    <img [src]="item.hinhAnh">
+                    <button routerLink="/chi-tiet-phim/{{item.maPhim}}" routerLinkActive="router-link-active" 
+                        class="btn btn-success">Dat ve</button>
+                </div>
+            </ng-template>
+        </ng-container>
+    </owl-carousel-o>
+</div>

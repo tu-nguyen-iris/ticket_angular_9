@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    color: red;
+}
+.movie {
+    .olw-car {
+        padding: 0 1rem;
+        img {
+            border-radius: 10px;
+            height: 20rem;
+            width: 100%;
+        }
+        button {
+            margin-left: auto;
+            width: 80%;
+        }
+    }
+}
+.owl-theme .owl-nav [class*='owl-']{
+    color: red;
+}

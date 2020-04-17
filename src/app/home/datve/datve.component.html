@@ -1,0 +1,52 @@
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-md-8 container">
+            <div class="ml-2 pt-md-5 text-center content_left">
+                <img class="img-thumbnail img_screen" src="./assets/screen.png" alt="">
+                <br />
+                <div class="w-75" style="margin: 0 auto;">
+                    <!-- <ng-container *ngFor="let ghe of DanhSachGhe; let i = index">
+                        <app-ghe (eventDatGhe)="datGhe($event)" [ghe]="ghe">
+                            <br *ngIf="(i+1)%10 ==0 " />
+                        </app-ghe>
+                    </ng-container> -->
+
+
+
+                </div>
+                <div class="my-5">
+
+                    <span class="desc_icon desc_ghedangchon">Ghế đang chọn</span>
+
+
+
+                    <span class="desc_icon desc_ghetrong">Ghế trống</span>
+                    <span class="desc_icon desc_ghedachon">Ghế đã chọn</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4  content_right">
+            <img class="img-thumbnail mx-auto d-block mt-5" src="{{ghe.thongTinPhim.hinhAnh}}" alt="" width="200"
+                height="250">
+            <h3 class="txt_orange">{{ghe.thongTinPhim.tenPhim}}</h3>
+            <p><span class="txt_green font-weight-bold"><i class="fa fa-home mr-1"></i>Rạp:
+                </span>{{ghe.thongTinPhim.tenRap}}</p>
+            <p> <span class="txt_green font-weight-bold"><i class="fa fa-calendar mr-1"></i>Ngày
+                    chiếu: </span>{{ghe.thongTinPhim.ngayChieu }} </p>
+            <p> <span class="txt_green font-weight-bold"><i class="fa fa-clock-o mr-1"></i>Suất
+                    chiếu: </span>{{ghe.thongTinPhim.gioChieu }} </p>
+            <p> <span class="txt_green font-weight-bold"><i class="fa fa-ticket mr-1"></i>Số ghế: </span>
+                <!-- <span *ngFor="let gheDangDat of DanhSachGheDangDat">
+                    {{gheDangDat.TenGhe + ","}}
+                </span> -->
+            </p>
+            <b>
+                <!-- <span class="txt_orange font-weight-bold">Tổng  -->
+
+                <!-- </span>: {{tongTien | number}} (click)="datVe() -->
+            </b>
+            <br />
+            <button class="btn ml-auto d-block mr-2 mb-4">ĐẶT VÉ</button>
+        </div>
+    </div>
+</div>

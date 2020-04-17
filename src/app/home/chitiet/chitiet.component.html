@@ -1,0 +1,40 @@
+<section>
+
+    <div class="backBlur">
+        <img src={{movie.hinhAnh}} />
+    </div>
+    <div class="body1 row container">
+        <div class="col-xl-3">
+            <img src={{movie.hinhAnh}} />
+        </div>
+        <div class="col-xl-3">
+            <h1>{{movie.tenPhim}}</h1>
+            <h2>ngay khoi chieu: {{movie.ngayKhoiChieu | date:'dd/MM/yyyy'}}</h2>
+            <h2>Dinh dang: 2D,Imax</h2>
+        </div>
+    </div>
+
+    <mat-tab-group class="Tabs" mat-align-tabs="center">
+        <mat-tab label="Dat ve">
+            <div class="container">
+                <app-theate [lichChieu]="movie.lichChieu"></app-theate>
+
+            </div>
+
+
+        </mat-tab>
+        <mat-tab label="Thong tin phim">
+            <div class="container">
+                <p>{{movie.moTa}}</p>
+            </div>
+        </mat-tab>
+
+    </mat-tab-group>
+
+
+
+
+
+
+
+</section>

@@ -1,0 +1,30 @@
+.backBlur {
+    position: relative;
+    height: 27rem;
+    overflow: hidden;
+    img {
+        width: 100%;
+        transform: scale(1.1);
+        filter: blur(13px);
+        -webkit-filter: blur(13px);
+        transform: scale(1.5);
+    }
+}
+.body1 {
+    color: red;
+    position: absolute;
+    img {
+        width: 14rem;
+        height: 21rem;
+        border-radius: 10px;
+    }
+    h1 {
+        margin-top: 3rem;
+    }
+    top: 40%;
+    left: 7%; 
+}
+.Tabs {
+    height: 60rem;
+    margin-top: 10rem;
+}

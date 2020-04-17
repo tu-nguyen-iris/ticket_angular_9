@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>ten Rap</th>
+            <th> Ten He Thong Rap</th>
+            <th> Ngay chieu</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of lichChieu">
+            <td>{{item.thongTinRap.tenRap}}</td>
+            <td>{{item.thongTinRap.tenHeThongRap}}</td>
+            <td> <a routerLink="dat-ve/{{item.maLichChieu}}"> {{item.ngayChieuGioChieu | date:'dd/MM/yyyy hh:MM' }} </a> </td>
+
+
+
+        </tr>
+    </tbody>
+</table>
